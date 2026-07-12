@@ -69,3 +69,12 @@ La posizione dei file principali:
 ```bash
 npm install
 npm run dev
+```
+
+Design e prototipo
+Il design e il flusso dell’interfaccia sono stati prototipati in Figma.
+
+🔗 Prototipo Figma
+https://shadow-swirl-78404106.figma.site/
+
+Nella cartella ```/project``` è possibile trovare altra documentazione relativa alla fase di progettazione, come alcuni stadi di mockup precedenti al confronto con il gruppo di utenti.
