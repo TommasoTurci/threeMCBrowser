@@ -53,8 +53,8 @@
           <div :class="editingItem ? 'col-md-7' : 'col-12'">
             <form @submit.prevent="saveItem">
               <div class="mb-3">
-                <label class="form-label  small">ID Blocco:</label>
-                <input v-if="!editingItem" v-model.trim="form.full_id" type="text" class="form-control input-dark"
+                <label for="form-full-id" class="form-label  small">ID Blocco:</label>
+                <input id="form-full-id" v-if="!editingItem" v-model.trim="form.full_id" type="text" class="form-control input-dark"
                   :class="{ 'is-invalid': formErrors.full_id }" placeholder="e.g. minecraft:stone" />
                 <div v-else class="d-flex align-items-center gap-2">
                   <img :src="`https://blocksitems.com/api/v1/blocks/${form.full_id}/icon?size=64`"
@@ -65,15 +65,15 @@
               </div>
 
               <div class="mb-3">
-                <label class="form-label  small">Nome</label>
-                <input v-model.trim="form.display_name" type="text" class="form-control input-dark"
+                <label for="form-display-name" class="form-label  small">Nome</label>
+                <input id="form-display-name" v-model.trim="form.display_name" type="text" class="form-control input-dark"
                   :class="{ 'is-invalid': formErrors.display_name }" placeholder="e.g. Stone" />
                 <div v-if="formErrors.display_name" class="invalid-feedback">{{ formErrors.display_name }}</div>
               </div>
 
               <div class="mb-3">
-                <label class="form-label  small">Appunti</label>
-                <textarea v-model.trim="form.notes" class="form-control input-dark" rows="2"
+                <label for="form-notes" class="form-label  small">Appunti</label>
+                <textarea id="form-notes" v-model.trim="form.notes" class="form-control input-dark" rows="2"
                   placeholder="Perché ti piace questo blocco?"></textarea>
               </div>
 
